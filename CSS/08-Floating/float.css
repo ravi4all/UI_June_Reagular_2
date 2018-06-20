@@ -1,24 +1,32 @@
-#parent {
-    background-color: red;
-    /* height: 470px; */
-}
-.col-1 {
-    float: left;
-    width: 50%;
-    background-color: lightblue;
+/* Pseudo Element - After and Before */
+
+#parent:after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
-.col-2 {
+#parent {
+    /* height: 500px; */
+    background-color: red;
+}
+.column-1 {
     float: left;
-    /* float: right; */
-    width: 50%;
-    /* background-color: lightcoral; */
+    background-color: lightblue;
+    width: 30%;
+}
+
+.column-2 {
+    float: right;
+    width: 30%;
+    background-color: lightcoral;
 }
 
 .div_1 {
     background-color: lightgreen;
+    /* clear: both; */
 }
 
-.blank {
+/* .blank {
     clear: both;
-}
+} */
