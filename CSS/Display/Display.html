@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* h2 {
+            display: inline;
+        }
+        a {
+            display: block;
+        } */
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        li {
+            display: inline-block;
+            background-color: crimson;
+            width: 16%;
+            text-align: center;
+            position: relative;
+        }
+        li a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        li:hover {
+            background-color: coral;
+        }
+        .dropdown {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            display: none;
+        }
+        .dropdown li {
+            display: block;
+            width: 100%;
+        }
+        li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Display</h1>
+
+    <!-- <h2>This is heading</h2>
+    <h2>This is heading</h2>
+
+    <a href="#">This is link</a>
+    <a href="#">This is link</a> -->
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Electronics</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Basketbal</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">Sports</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Basketbal</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">More</a></li>
+    </ul>
+    
+</body>
+</html>
