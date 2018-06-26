@@ -80,19 +80,128 @@ h1,h2,h3,h4,h5,h6 {
 #main-navigation{
     width: 45%;
 }
+#main-navigation ul {
+    position: relative;
+}
 #main-navigation ul li {
     text-transform: uppercase;
     display: inline-block;
     margin: 0px 10px;
-    padding-top: 8px;
+    padding-bottom: 8px;
+    /* position: relative; */
 }
 #main-navigation ul li a {
     color: #fff;
 }
 
+#main-navigation .dropdown {
+    position: absolute;
+    background-color: #fff;
+    width: 60%;
+    z-index: 100;
+    padding: 20px;
+    top: 35px;
+    border-top: 4px solid #5EAFFD;
+    display: none;
+    margin-left: -30px;
+}
+#main-navigation .dropdown ul li {
+    width: 40%;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+#main-navigation .dropdown ul li a {
+    color: #000;
+}
+#main-navigation .dropdown:before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 10%;
+    border: 5px solid #5EAFFD;
+    border-color: transparent transparent #5EAFFD;
+}
+#main-navigation ul li:hover .dropdown {
+    display: block;
+}
+
 /* Content */
 #content {
 
+}
+
+/* Section_1 */
+#section_1 {
+    background-color: #272F3E;
+}
+#section_1 .main{
+    width: 78%;
+}
+#section_1 .main a {
+    display: block;
+    color: #fff;
+}
+#section_1 .main h1 {
+    font-family: 'proxima-nova';
+    font-size: 38px;
+    font-weight: 800;
+}
+#section_1 .main .image_1, #section_1 .main .image_2 {
+    width: 50%;
+}
+#section_1 .main a img {
+    width: 100%;
+    /* min-height: 220px; */
+}
+#section_1 .main .image {
+    position: relative;
+    overflow: hidden;
+}
+#section_1 .main .image:hover .news{
+    bottom: 0px;
+}
+#section_1 .main .news {
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    z-index: 10;
+    padding: 20px;
+    transition-duration: 0.5s;
+}
+#section_1 .main .news_desc {
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+#section_1 .main .image:hover .news_desc {
+    opacity: 1;
+}
+
+#section_1 .main .image:after {
+    content: "";
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.75;
+    background: linear-gradient(-180deg, transparent 0%, #000 80%);
+}
+
+
+#section_1 .headlines {
+    width: 22%;
+    background-color: #272F3E;
+}
+#section_1 .headlines h3 {
+    margin: 0px;
+}
+#section_1 .headlines ul li {
+    padding: 6px 20px;
+}
+#section_1 .headlines ul li a {
+    font-size: 14px;
+    color: #fff;
 }
 
 /* Footer */
