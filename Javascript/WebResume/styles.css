@@ -1,0 +1,16 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+#container {
+    width: 1000%;
+    height: 600px;
+    background-image: url("images/citytiled1.png");
+    background-size: contain;
+}
+
+#char {
+    position: fixed;
+    bottom: 10%;
+    left: 45%;
+}
