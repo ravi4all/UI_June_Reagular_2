@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        #header {
+            position: fixed;
+            bottom: 0px;
+            background-color: lightblue;
+            text-align: center;
+            width: 100%;
+            z-index: 10;
+            transition: 1s;
+        }
+        #header.active {
+            bottom: 87%;
+        }
+        #content div div {
+            display: inline-block;
+            width: 45%;
+        }
+        .image_1 {
+            transform: translateX(-100%);
+            transition: 1s;
+        }
+        .image_2 {
+            transform: translateX(150%);
+            transition: 1s;
+        }
+        #section_2.active .image_1,#section_2.active .image_2 {
+            transform: translate(0%);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>This is header</h1>
+    </div>
+    
+    <div id="content">
+        <div id="section_1" class="section">
+            <h2>This is heading</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id iste libero, voluptates vitae inventore porro perferendis. Reiciendis laboriosam optio, doloremque, non odit assumenda nostrum consectetur ab modi illo temporibus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae a consectetur aut dolorem nobis magni amet tempora, maiores modi officiis earum sint, numquam nostrum culpa velit non magnam eos!
+            </p>
+            <div class="image_1">
+                <img src="../../dhoni.jpg" alt="" class="left">
+            </div>
+            <div class="image_2">
+                <img src="../../dhoni.jpg" alt="" class="right">
+            </div>
+        </div>
+        
+        <div id="section_2" class="section">
+            <h2>This is heading</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id iste libero, voluptates vitae inventore porro perferendis. Reiciendis laboriosam optio, doloremque, non odit assumenda nostrum consectetur ab modi illo temporibus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae a consectetur aut dolorem nobis magni amet tempora, maiores modi officiis earum sint, numquam nostrum culpa velit non magnam eos!
+            </p>
+            <div class="image_1">
+                <img src="../../dhoni.jpg" alt="" class="left">
+            </div>
+            <div class="image_2">
+                <img src="../../dhoni.jpg" alt="" class="right">
+            </div>
+        </div>
+
+        <div id="section_3" class="section">
+            <h2>This is heading</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id iste libero, voluptates vitae inventore porro perferendis. Reiciendis laboriosam optio, doloremque, non odit assumenda nostrum consectetur ab modi illo temporibus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae a consectetur aut dolorem nobis magni amet tempora, maiores modi officiis earum sint, numquam nostrum culpa velit non magnam eos!
+            </p>
+            <div class="image_1">
+                <img src="../../dhoni.jpg" alt="" class="left">
+            </div>
+            <div class="image_2">
+                <img src="../../dhoni.jpg" alt="" class="right">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scrollAnim.js"></script>
+</body>
+</html>
