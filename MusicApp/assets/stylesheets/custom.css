@@ -87,7 +87,7 @@
     display: block;
     margin: 10px 0px;
 }
-#songs li .playIcon {
+#songs li .playIcon,#playList li .playIcon {
     position: absolute;
     top: 30%;
     left: 40%;
@@ -122,6 +122,21 @@
         margin: 0px 5px 30px;
         font-size: 13px;
     }
+}
+
+#playList li img{
+    width: 20%;
+}
+#playList li .playIcon {
+    left: 30px;
+}
+#playList li span {
+    cursor: pointer;
+}
+#playList li .deleteBtn {
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
 }
 
 

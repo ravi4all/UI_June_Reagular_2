@@ -24,73 +24,73 @@ var songsArray = [
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Linkin_Park_-_Numb_CD_cover.jpg/220px-Linkin_Park_-_Numb_CD_cover.jpg'
     },
     {
-        'songId' : 1,
+        'songId' : 5,
         'songName' : 'Faded - Alan Walker',
         'songUrl' : 'assets/songs/faded.mp3',
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Alan_Walker_-_Faded.png/220px-Alan_Walker_-_Faded.png'
     },
     {
-        'songId' : 2,
+        'songId' : 6,
         'songName' : 'Wavin Flag',
         'songUrl' : 'assets/songs/fifa world cup.mp3',
         'songImage' : 'https://is5-ssl.mzstatic.com/image/thumb/Music/b2/94/bd/mzi.woxjcmdc.jpg/268x0w.jpg'
     },
     {
-        'songId' : 3,
+        'songId' : 7,
         'songName' : 'Linkin Park - Faint',
         'songUrl' : 'assets/songs/linkin_park-faint.mp3',
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/7/73/Linkin_Park_-_Faint_CD_cover.jpg/220px-Linkin_Park_-_Faint_CD_cover.jpg'
     },
     {
-        'songId' : 4,
+        'songId' : 8,
         'songName' : 'Linkin Park - Numb',
         'songUrl' : 'assets/songs/numb.mp3',
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Linkin_Park_-_Numb_CD_cover.jpg/220px-Linkin_Park_-_Numb_CD_cover.jpg'
     },
     {
-        'songId' : 1,
+        'songId' : 9,
         'songName' : 'Faded - Alan Walker',
         'songUrl' : 'assets/songs/faded.mp3',
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Alan_Walker_-_Faded.png/220px-Alan_Walker_-_Faded.png'
     },
     {
-        'songId' : 2,
+        'songId' : 10,
         'songName' : 'Wavin Flag',
         'songUrl' : 'assets/songs/fifa world cup.mp3',
         'songImage' : 'https://is5-ssl.mzstatic.com/image/thumb/Music/b2/94/bd/mzi.woxjcmdc.jpg/268x0w.jpg'
     },
     {
-        'songId' : 3,
+        'songId' : 11,
         'songName' : 'Linkin Park - Faint',
         'songUrl' : 'assets/songs/linkin_park-faint.mp3',
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/7/73/Linkin_Park_-_Faint_CD_cover.jpg/220px-Linkin_Park_-_Faint_CD_cover.jpg'
     },
     {
-        'songId' : 4,
+        'songId' : 12,
         'songName' : 'Linkin Park - Numb',
         'songUrl' : 'assets/songs/numb.mp3',
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Linkin_Park_-_Numb_CD_cover.jpg/220px-Linkin_Park_-_Numb_CD_cover.jpg'
     },
     {
-        'songId' : 1,
+        'songId' : 13,
         'songName' : 'Faded - Alan Walker',
         'songUrl' : 'assets/songs/faded.mp3',
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Alan_Walker_-_Faded.png/220px-Alan_Walker_-_Faded.png'
     },
     {
-        'songId' : 2,
+        'songId' : 14,
         'songName' : 'Wavin Flag',
         'songUrl' : 'assets/songs/fifa world cup.mp3',
         'songImage' : 'https://is5-ssl.mzstatic.com/image/thumb/Music/b2/94/bd/mzi.woxjcmdc.jpg/268x0w.jpg'
     },
     {
-        'songId' : 3,
+        'songId' : 15,
         'songName' : 'Linkin Park - Faint',
         'songUrl' : 'assets/songs/linkin_park-faint.mp3',
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/7/73/Linkin_Park_-_Faint_CD_cover.jpg/220px-Linkin_Park_-_Faint_CD_cover.jpg'
     },
     {
-        'songId' : 4,
+        'songId' : 16,
         'songName' : 'Linkin Park - Numb',
         'songUrl' : 'assets/songs/numb.mp3',
         'songImage' : 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Linkin_Park_-_Numb_CD_cover.jpg/220px-Linkin_Park_-_Numb_CD_cover.jpg'

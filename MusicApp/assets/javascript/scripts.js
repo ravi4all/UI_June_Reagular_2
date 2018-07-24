@@ -23,6 +23,7 @@ function initPlayer(){
         var playIcon = document.createElement("button");
         var btn = document.createElement("button");
         span.innerHTML = songsArray[i].songName;
+        span.setAttribute('title', songsArray[i].songId);
         img.setAttribute('src', songsArray[i].songImage);
         img.className = "cover";
         // btn.innerHTML = '<i class="fas fa-plus"></i>';
@@ -38,6 +39,7 @@ function initPlayer(){
         // span.addEventListener("click", setSongName);
         playIcon.addEventListener("click", setSongName);
         ul.appendChild(li);
+        btn.addEventListener("click", addToPlaylist);
     }
 
 }
@@ -107,4 +109,59 @@ function toggleSong(){
 function stopSong(){
     audio.currentTime = 0;
     audio.pause();
+}
+
+// function addToPlaylist(){
+//     var ul = document.getElementById("playList");
+//     var elem = event.srcElement.parentElement.innerHTML;
+//     var li = document.createElement("li");
+//     li.innerHTML = elem;
+//     li.className = "list-group-item";
+//     li.childNodes[1].addEventListener("click", setSongName);
+//     li.childNodes[3].addEventListener("click", setSongName);
+//     li.childNodes[2].innerHTML = '<i class="fas fa-trash"></i>';
+//     li.childNodes[2].className = "btn btn-primary deleteSong";
+//     ul.appendChild(li);
+// }
+
+function addToPlaylist(){
+    var songId = event.srcElement.parentElement.childNodes[1].title;
+    for(var i = 0; i < songsArray.length; i++){
+        if(songsArray[i].songId == songId) {
+            obj.addSong(songsArray[i].songId,
+                        songsArray[i].songName,
+                        songsArray[i].songUrl,
+                        songsArray[i].songImage);
+        }
+    }
+    showPlayList();
+}
+
+function showPlayList(){
+    var ul = document.getElementById("playList");
+    ul.innerHTML = "";
+    console.log("playlist function");
+    obj.playList.forEach(function(s){
+        console.log("Creating playlist");
+        var li = document.createElement("li");
+        var span = document.createElement("span");
+        var img = document.createElement("img");
+        var playIcon = document.createElement("button");
+        var btn = document.createElement("button");
+        span.innerHTML = s.name;
+        img.setAttribute('src', s.songimage);
+        img.className = "cover";
+        btn.innerHTML = '<i class="fas fa-trash"></i>';
+        btn.className = "btn btn-primary deleteBtn";
+        playIcon.className = 'playIcon';
+        li.className = "list-group-item";
+        li.appendChild(img);
+        li.appendChild(span);
+        li.appendChild(btn);
+        li.appendChild(playIcon);
+        span.addEventListener("click", setSongName);
+        playIcon.addEventListener("click", setSongName);
+        ul.appendChild(li);
+        btn.addEventListener("click", addToPlaylist);
+    })   
 }
