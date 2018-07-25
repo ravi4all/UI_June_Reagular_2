@@ -15,6 +15,8 @@ function initPlayer(){
     document.getElementById("stopSong").addEventListener("click", stopSong);
     document.getElementById("nextSong").addEventListener("click", nextSong);
     document.getElementById("previousSong").addEventListener("click", previousSong);
+    document.getElementById("savePlaylist").addEventListener("click", savePlayList);
+    document.getElementById("searchSong").addEventListener("keyup", searchSong);
 
     for(var i = 0; i < songsArray.length; i++) {
         var li = document.createElement("li");
@@ -42,7 +44,38 @@ function initPlayer(){
         btn.addEventListener("click", addToPlaylist);
     }
 
+    loadPlayList();
+
 }
+
+function savePlayList(){
+    if(window.localStorage) {
+        var json = JSON.stringify(obj.playList);
+        console.log(json);
+        localStorage.setItem('myPlayList', json);
+    }
+    else{
+        alert("Localstorage not supported...");
+    }
+}
+
+function loadPlayList() {
+    if(localStorage.myPlayList) {
+        var data = localStorage.getItem('myPlayList')
+        obj.playList = JSON.parse(data);
+    }
+    showPlayList();
+}
+
+function searchSong() {
+    var toSearch = event.srcElement.value;
+    if(toSearch == "") {
+        loadPlayList();
+    }
+    obj.searchSong(toSearch);
+    showPlayList();
+}
+
 function setSongName(){
     // console.log(event.srcElement.parentElement.childNodes[0].innerText);
     songName = event.srcElement.parentElement.childNodes[1].innerText;
@@ -137,18 +170,26 @@ function addToPlaylist(){
     showPlayList();
 }
 
+function deleteSong(){
+    var songId = parseInt(event.srcElement.parentElement.childNodes[1].title);
+    console.log(songId);
+    obj.deleteSong(songId);
+    showPlayList();
+}
+
 function showPlayList(){
     var ul = document.getElementById("playList");
     ul.innerHTML = "";
-    console.log("playlist function");
+    // console.log("playlist function");
     obj.playList.forEach(function(s){
-        console.log("Creating playlist");
+        // console.log("Creating playlist");
         var li = document.createElement("li");
         var span = document.createElement("span");
         var img = document.createElement("img");
         var playIcon = document.createElement("button");
         var btn = document.createElement("button");
         span.innerHTML = s.name;
+        span.setAttribute('title', s.id);
         img.setAttribute('src', s.songimage);
         img.className = "cover";
         btn.innerHTML = '<i class="fas fa-trash"></i>';
@@ -162,6 +203,6 @@ function showPlayList(){
         span.addEventListener("click", setSongName);
         playIcon.addEventListener("click", setSongName);
         ul.appendChild(li);
-        btn.addEventListener("click", addToPlaylist);
+        btn.addEventListener("click", deleteSong);
     })   
 }
