@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/stylesheets/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/stylesheets/custom.css">
+    <script src="assets/javascript/model.js"></script>
     <script src="assets/javascript/songs.js"></script>
     <script src="assets/javascript/scripts.js"></script>
 </head>
@@ -105,7 +106,7 @@
                   </div>
     
                   <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" id="searchSong" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                   </form>
                 </div>
@@ -136,7 +137,7 @@
         </div>
 
         <div id="content">
-            <div class="container">
+            <div class="container-fluid">
                 
                 <main id="main">
                     <div class="row">
@@ -185,6 +186,9 @@
                         <div class="col-md-3">
                             <aside id="sidebar">
                                 <h2 class="text-center">My Playlist</h2>
+                                <button id="savePlaylist" class="btn btn-warning">Save Playlist</button>
+                                <button id="sortPlaylist" class="btn btn-warning">Sort Playlist</button>
+                                <br><br>
                                 <ul id="playList" class="list-group">
 
                                 </ul>
