@@ -1,0 +1,10 @@
+
+
+
+{
+ "resultCount":1,
+ "results": [
+{"wrapperType":"collection", "collectionType":"Album", "artistId":2541832, "collectionId":394792026, "amgArtistId":5141, "artistName":"Pianosaurus", "collectionName":"Groovy Neighborhood", "collectionCensoredName":"Groovy Neighborhood", "artistViewUrl":"https://itunes.apple.com/us/artist/pianosaurus/2541832?uo=4", "collectionViewUrl":"https://itunes.apple.com/us/album/groovy-neighborhood/394792026?uo=4", "artworkUrl60":"https://is3-ssl.mzstatic.com/image/thumb/Music/v4/67/dc/e9/67dce9e6-8e95-b631-b964-9028f5d8b5f2/source/60x60bb.jpg", "artworkUrl100":"https://is3-ssl.mzstatic.com/image/thumb/Music/v4/67/dc/e9/67dce9e6-8e95-b631-b964-9028f5d8b5f2/source/100x100bb.jpg", "collectionPrice":9.99, "collectionExplicitness":"notExplicit", "trackCount":17, "copyright":"℗ 1987 Rounder Records Manufactured and distributed by Concord Music Group", "country":"USA", "currency":"USD", "releaseDate":"1987-01-01T08:00:00Z", "primaryGenreName":"Pop"}]
+}
+
+
